@@ -1,5 +1,5 @@
 import { yarg } from "./config/plugins/args.plugin";
-import { ServerApp } from "./presentation/server-ap";
+import { ServerApp } from "./presentation/server-app";
 
 
 
@@ -10,7 +10,7 @@ import { ServerApp } from "./presentation/server-ap";
 
 async function main() {
 
-    const { b:base, l:limit, s:showTable, n:name, d:destination} = yarg;
+    const { b:base, l:limit, s:showTable, n:fileName, d:fileDestination} = yarg;
 
-    ServerApp.run({ base, limit, showTable, name, destination});
+    ServerApp.run({ base, limit, showTable, fileName, fileDestination});
 }

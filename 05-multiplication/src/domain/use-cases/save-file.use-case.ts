@@ -1,5 +1,4 @@
 import fs from 'fs';
-import { boolean } from 'yargs';
 
 export interface SaveFileUseCase{
     execute: ( options: Options) => boolean;
@@ -29,7 +28,7 @@ export class SaveFile implements SaveFileUseCase{
                 fs.writeFileSync(`${fileDestination}/${ fileName }.txt`, fileContent);
                 return true;
             } catch (error) {
-                console.error(error)
+                // console.error(error) // winston
                 return false;
             }
     }
