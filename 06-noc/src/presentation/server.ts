@@ -44,20 +44,20 @@ export class Server {
         // console.log(logs)
 
 
-        CronService.createJob(
-            '*/5 * * * * *',
-            () => {
-                const url = 'https://google.com'
-                new CheckServiceMultiple(
-                    [fsLogRepository, mongoLogRepository, postgresLogRepository],
-                    () => console.log( `${ url } is OK!` ),
-                    ( error ) => console.log( error )
-                ).execute(url);
-                // new CheckService().execute('http://localhost:3000/');
-                // console.log(envs)
+        // CronService.createJob(
+        //     '*/5 * * * * *',
+        //     () => {
+        //         const url = 'https://google.com'
+        //         new CheckServiceMultiple(
+        //             [fsLogRepository, mongoLogRepository, postgresLogRepository],
+        //             () => console.log( `${ url } is OK!` ),
+        //             ( error ) => console.log( error )
+        //         ).execute(url);
+        //         // new CheckService().execute('http://localhost:3000/');
+        //         // console.log(envs)
 
-            }
-        );
+        //     }
+        // );
 
     }
 }

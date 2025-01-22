@@ -6,4 +6,5 @@
 
 3. Ejecutar ```npm i```
 4. Levantar las bases de datos con el comando ```docker compose up -d```
-5. Ejecutar ```npm run dev```
+5. Eejecutar el comando ```npx prisma migrate dev```
+6. Ejecutar ```npm run dev```
