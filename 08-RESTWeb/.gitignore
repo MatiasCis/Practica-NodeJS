@@ -1,0 +1,17 @@
+node_modules/
+
+*.log
+
+.DS_Store
+
+coverage/
+
+logs/
+
+.env
+
+mongo/
+postgres/
+
+mongo-test/
+postgres-test/
