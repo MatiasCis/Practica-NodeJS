@@ -1,4 +1,4 @@
-import { CronService } from './cron-service';
+import { CronService } from './cron.service';
 
 
 

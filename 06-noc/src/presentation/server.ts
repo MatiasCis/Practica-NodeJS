@@ -3,7 +3,7 @@ import { FileSystemDatasource } from "../infrastructure/datasources/file-system.
 import { MongoLogDatasource } from "../infrastructure/datasources/mongo-log.datasource";
 import { PostgresLogDatasource } from "../infrastructure/datasources/postgres-log.datasource";
 import { LogRepositoryImpl } from "../infrastructure/repositories/log.repository.impl";
-import { CronService } from "./cron/cron-service"
+import { CronService } from "./cron/cron.service"
 import { EmailService } from "./email/email.service";
 
 
