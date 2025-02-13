@@ -4,3 +4,5 @@ Documentos
 
 test-destination
 .env.test
+# Local Netlify folder
+.netlify
